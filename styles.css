@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./pic/pexels.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+div {
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 50vh; */
+  /* margin-top: 30%; */
+}
+
+.container {
+  margin-top: 10%;
+}
+
+.small,.start,.finish {
+  font-size: 12px;
+}
+
+ .border {
+  background-color: white;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.color {
+  background-color: skyblue;
+  height: 8px;
+  width: 75%;
+  margin-right: auto;
+}
+
+.start,.finish {
+  justify-content: flex-start;
+}
+
+.start {
+  width: 80%;
+  margin-right: auto;
+}
+
+.finish {
+  width: 80%;
+  margin-left: auto;
+}
