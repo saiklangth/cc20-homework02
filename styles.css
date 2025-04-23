@@ -9,51 +9,110 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-div {
-  color: white;
-  font-size: 50px;
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 50vh; */
-  /* margin-top: 30%; */
+  flex-direction: column;
+  height: 100vh;
 }
 
 .container {
-  margin-top: 10%;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
 }
 
-.small,.start,.finish {
-  font-size: 12px;
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* margin-right: 180px; */
+  margin-top: 12px;
+  padding-right: 120px;
+  color: white;
+  font-size: x-small;
 }
 
- .border {
-  background-color: white;
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
- }
+.word {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  /* margin-top: 8rem; */
+  color: white;
+  font-size: 2.5rem;
+}
 
-.color {
-  background-color: skyblue;
+.load {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  gap: 5px;
+  color: #cfdecc;
+  font-size: x-small;
+  padding-bottom: 12px;
+}
+
+.bar {
+  width: 250px;
   height: 8px;
-  width: 75%;
-  margin-right: auto;
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 6px 7px 30px 1px rgba(0,0,0,0.57);
 }
 
-.start,.finish {
-  justify-content: flex-start;
+.box1 {
+  width: 180px;
+  height: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #add9e6;
 }
 
-.start {
-  width: 80%;
-  margin-right: auto;
+.bar p {
+  padding-top: 8px;
+  font-size: x-small;
+  color: #cfdecc;
 }
 
-.finish {
-  width: 80%;
-  margin-left: auto;
+input {
+  margin-top: 2.5rem;
+  width: 6rem;
+  height: 1.8rem;
+  color: #374750;
+  background-color: #add9e6;
+  border: none;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+  color: white;
+  padding: 20px;
+  margin-top: 4px;
+}
+
+.logo i {
+  font-size: 1.5rem;
+  padding: 4px;
+  border: 1px solid;
+  border-radius: 100px;
+}
+
+footer {
+  padding: 8px;
+  color: #636763;
+  text-align: center;
+  border-top: 1px solid #6f797a;
+  font-size: small;
 }
